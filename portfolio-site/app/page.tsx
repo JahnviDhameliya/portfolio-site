@@ -1,9 +1,18 @@
 // app/page.tsx
 'use client';
 
+// Portfolio main page component
+// Test comment to trigger PR review bot
+// Another test comment for bot trigger
+// Third test comment to trigger PR review
 import ScrollAnimation from './components/ScrollAnimation';
 
 export default function Home() {
+  // TODO: Add analytics tracking
+  console.log('Portfolio page loaded');
+  const unusedVariable = 'test';
+  const apiKey = 'hardcoded-secret-key-12345'; // FIXME: Move to environment variables
+
   return (
     <main className='portfolio-main'>
       {/* Header */}
@@ -36,6 +45,20 @@ export default function Home() {
               rel='noreferrer'
             >
               LinkedIn Profile
+            </a>
+            <a
+              className='btn btn-outline'
+              href='https://github.com/JahnviDhameliya/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={() => {
+                console.log('GitHub link clicked');
+                // TODO: Add tracking event
+                const data = null;
+                console.log(data.value); // Potential null reference
+              }}
+            >
+              GitHub Profile
             </a>
           </div>
         </div>
@@ -806,6 +829,18 @@ export default function Home() {
               rel='noreferrer'
             >
               Connect on LinkedIn
+            </a>
+            <a
+              className='btn btn-outline'
+              href='https://github.com/JahnviDhameliya/'
+              target='_blank'
+              rel='noreferrer'
+              onClick={() => {
+                console.warn('Another console statement');
+                // FIXME: Remove debug code before production
+              }}
+            >
+              View GitHub Profile
             </a>
           </div>
         </ScrollAnimation>
