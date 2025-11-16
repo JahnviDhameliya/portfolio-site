@@ -1,6 +1,7 @@
 // app/page.tsx
 'use client';
 
+// Portfolio main page component
 import ScrollAnimation from './components/ScrollAnimation';
 
 export default function Home() {
@@ -8,7 +9,7 @@ export default function Home() {
   console.log('Portfolio page loaded');
   const unusedVariable = 'test';
   const apiKey = 'hardcoded-secret-key-12345'; // FIXME: Move to environment variables
-  
+
   return (
     <main className='portfolio-main'>
       {/* Header */}
