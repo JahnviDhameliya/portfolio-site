@@ -4,6 +4,11 @@
 import ScrollAnimation from './components/ScrollAnimation';
 
 export default function Home() {
+  // TODO: Add analytics tracking
+  console.log('Portfolio page loaded');
+  const unusedVariable = 'test';
+  const apiKey = 'hardcoded-secret-key-12345'; // FIXME: Move to environment variables
+  
   return (
     <main className='portfolio-main'>
       {/* Header */}
@@ -42,6 +47,12 @@ export default function Home() {
               href='https://github.com/JahnviDhameliya/'
               target='_blank'
               rel='noreferrer'
+              onClick={() => {
+                console.log('GitHub link clicked');
+                // TODO: Add tracking event
+                const data = null;
+                console.log(data.value); // Potential null reference
+              }}
             >
               GitHub Profile
             </a>
@@ -820,6 +831,10 @@ export default function Home() {
               href='https://github.com/JahnviDhameliya/'
               target='_blank'
               rel='noreferrer'
+              onClick={() => {
+                console.warn('Another console statement');
+                // FIXME: Remove debug code before production
+              }}
             >
               View GitHub Profile
             </a>
