@@ -37,6 +37,14 @@ export default function Home() {
             >
               LinkedIn Profile
             </a>
+            <a
+              className='btn btn-outline'
+              href='https://github.com/JahnviDhameliya/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              GitHub Profile
+            </a>
           </div>
         </div>
       </header>
@@ -806,6 +814,14 @@ export default function Home() {
               rel='noreferrer'
             >
               Connect on LinkedIn
+            </a>
+            <a
+              className='btn btn-outline'
+              href='https://github.com/JahnviDhameliya/'
+              target='_blank'
+              rel='noreferrer'
+            >
+              View GitHub Profile
             </a>
           </div>
         </ScrollAnimation>
