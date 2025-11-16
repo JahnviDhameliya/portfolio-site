@@ -2,6 +2,7 @@
 'use client';
 
 // Portfolio main page component
+// Test comment to trigger PR review bot
 import ScrollAnimation from './components/ScrollAnimation';
 
 export default function Home() {
