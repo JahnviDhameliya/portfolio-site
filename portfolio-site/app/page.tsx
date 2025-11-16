@@ -3,6 +3,7 @@
 
 // Portfolio main page component
 // Test comment to trigger PR review bot
+// Another test comment for bot trigger
 import ScrollAnimation from './components/ScrollAnimation';
 
 export default function Home() {
